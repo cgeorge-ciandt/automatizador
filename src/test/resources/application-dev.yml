@@ -1,0 +1,7 @@
+spring:
+ cloud:
+  config:
+   enabled: false
+
+topaz:
+ uri: "https://topaz-api.dev-sicredi.in"

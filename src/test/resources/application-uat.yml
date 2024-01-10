@@ -1,0 +1,7 @@
+spring:
+ cloud:
+  config:
+   enabled: false
+
+topaz:
+ uri: "http://uat-topaz-ws.uat-sicredi.in"

@@ -1,0 +1,10 @@
+spring:
+ cloud:
+  config:
+   enabled: false
+
+reqres:
+ uri: "https://reqres.in"
+
+topaz:
+ uri: "https://topaz-api.dev-sicredi.in"

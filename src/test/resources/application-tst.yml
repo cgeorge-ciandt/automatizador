@@ -1,0 +1,7 @@
+spring:
+ cloud:
+  config:
+   enabled: false
+
+topaz:
+ uri: "http://tst-core.tst-sicredi.in"

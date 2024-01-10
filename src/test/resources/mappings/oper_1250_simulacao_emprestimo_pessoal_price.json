@@ -1,0 +1,231 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "/topazinterpretedws/credit/v1/simulation",
+        "headers": {
+          "Accept": {
+            "contains": "application/json"
+          },
+          "Content-Type": {
+            "equalTo": "application/json",
+            "caseInsensitive": true
+          },
+          "Topaz-Transaction-ID": {
+            "matches": ".*"
+          },
+          "Topaz-User": {
+            "equalTo": "WEB",
+            "caseInsensitive": true
+          },
+          "Topaz-Branch": {
+            "matches": ".*"
+          },
+          "Topaz-Company": {
+            "matches": ".*"
+          },
+          "Topaz-Channel": {
+            "equalTo": "WEB",
+            "caseInsensitive": true
+          }
+        },
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "insuranceAmount": 600,
+              "productCode": "200",
+              "hiringDate": "2023-12-28",
+              "organization": 730,
+              "requestedAmount": 15500.0,
+              "paymentPeriod": "MONTHLY",
+              "firstDueDate": "2024-01-12",
+              "monthlyInterestRate": 4.15,
+              "installmentsQuantity": 20,
+              "customer": 2435594
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "normalIof": 373.07,
+          "financedAmount": 16535.91,
+          "monetaryCorrection": 0.0000,
+          "installmentAmount": 1206.51,
+          "fee": 0.00,
+          "monthlyInterestRate": 4.15,
+          "branch": "",
+          "percentageRequestedAmount": 64.23,
+          "arrearsRate": 2.00,
+          "installments": [
+            {
+              "dueDate": "2024-01-12T00:00:00-03:00",
+              "installment": 1,
+              "interestAmount": 316.77,
+              "principalAmount": 889.74,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-02-12T00:00:00-03:00",
+              "installment": 2,
+              "interestAmount": 649.32,
+              "principalAmount": 557.19,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-03-12T00:00:00-03:00",
+              "installment": 3,
+              "interestAmount": 626.19,
+              "principalAmount": 580.32,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-04-12T00:00:00-03:00",
+              "installment": 4,
+              "interestAmount": 602.11,
+              "principalAmount": 604.40,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-05-12T00:00:00-03:00",
+              "installment": 5,
+              "interestAmount": 577.03,
+              "principalAmount": 629.48,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-06-12T00:00:00-03:00",
+              "installment": 6,
+              "interestAmount": 550.90,
+              "principalAmount": 655.61,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-07-12T00:00:00-03:00",
+              "installment": 7,
+              "interestAmount": 523.70,
+              "principalAmount": 682.81,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-08-12T00:00:00-03:00",
+              "installment": 8,
+              "interestAmount": 495.36,
+              "principalAmount": 711.15,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-09-12T00:00:00-03:00",
+              "installment": 9,
+              "interestAmount": 465.85,
+              "principalAmount": 740.66,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-10-12T00:00:00-03:00",
+              "installment": 10,
+              "interestAmount": 435.11,
+              "principalAmount": 771.40,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-11-12T00:00:00-03:00",
+              "installment": 11,
+              "interestAmount": 403.10,
+              "principalAmount": 803.41,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2024-12-12T00:00:00-03:00",
+              "installment": 12,
+              "interestAmount": 369.75,
+              "principalAmount": 836.76,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-01-12T00:00:00-03:00",
+              "installment": 13,
+              "interestAmount": 335.03,
+              "principalAmount": 871.48,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-02-12T00:00:00-03:00",
+              "installment": 14,
+              "interestAmount": 298.86,
+              "principalAmount": 907.65,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-03-12T00:00:00-03:00",
+              "installment": 15,
+              "interestAmount": 261.19,
+              "principalAmount": 945.32,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-04-12T00:00:00-03:00",
+              "installment": 16,
+              "interestAmount": 221.96,
+              "principalAmount": 984.55,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-05-12T00:00:00-03:00",
+              "installment": 17,
+              "interestAmount": 181.11,
+              "principalAmount": 1025.40,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-06-12T00:00:00-03:00",
+              "installment": 18,
+              "interestAmount": 138.55,
+              "principalAmount": 1067.96,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-07-12T00:00:00-03:00",
+              "installment": 19,
+              "interestAmount": 94.23,
+              "principalAmount": 1112.28,
+              "installmentValue": 1206.51
+            },
+            {
+              "dueDate": "2025-08-12T00:00:00-03:00",
+              "installment": 20,
+              "interestAmount": 48.17,
+              "principalAmount": 1158.34,
+              "installmentValue": 1206.51
+            }
+          ],
+          "percentageFee": 0.00,
+          "percentageIof": 1.80,
+          "annualDefaultInterestRate": 82.69,
+          "insuranceAmount": 0.00,
+          "monthlyCet": 4.86,
+          "hiringDate": "2023-12-28T00:00:00-03:00",
+          "finalDueDate": "2025-08-12T00:00:00-03:00",
+          "percentageInterest": 31.47,
+          "interestAmount": 7594.29,
+          "totalAmount": 24130.20,
+          "productCode": 200,
+          "annualInterestRate": 62.90,
+          "additionalIof": 62.84,
+          "monthlyDefaultInterestRate": 5.15,
+          "organization": 730,
+          "financialAgent": "Sicredi Campos Gerais PR/SP",
+          "requestedAmount": 15500.0,
+          "firstDueDate": "2024-01-12T00:00:00-03:00",
+          "customer": 2435594,
+          "annualCet": 78.12
+        }
+      }
+    }
+  ]
+}

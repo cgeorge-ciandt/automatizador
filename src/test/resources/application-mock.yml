@@ -1,0 +1,10 @@
+spring:
+ cloud:
+  config:
+   enabled: false
+
+reqres:
+ uri: "http://localhost:${wiremock.server.port}"
+
+topaz:
+ uri: "http://localhost:${wiremock.server.port}"
